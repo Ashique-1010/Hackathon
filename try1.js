@@ -65,3 +65,45 @@ function startAnimation() {
 
 // Start the animation when the document is ready
 document.addEventListener('DOMContentLoaded', startAnimation);
+
+
+
+// added by aioont for loading...
+
+// Get the loading percentage element
+const loadingPercentageElement = document.getElementById('loading-percentage');
+
+// Function to update the loading percentage
+function updateLoadingPercentage(percentage) {
+    loadingPercentageElement.textContent = `${Math.min(Math.round(percentage), 100)}%`;
+}
+
+// Calculate the total duration in milliseconds
+const totalDuration = 3000; // 3 seconds
+const updateInterval = 100; // Update every 100 milliseconds
+
+// Calculate the increment per update to complete loading in the specified duration
+const totalUpdates = totalDuration / updateInterval;
+const targetPercentageIncrement = 100 / totalUpdates;
+
+let currentPercentage = 0;
+const loadingInterval = setInterval(() => {
+    currentPercentage += targetPercentageIncrement;
+
+    updateLoadingPercentage(currentPercentage);
+
+    if (currentPercentage >= 100) {
+        clearInterval(loadingInterval);
+        // Optionally, you can hide the loading text or perform other actions when loading is complete
+    }
+}, updateInterval);
+
+// Get the loading text element
+const loadingTextElement = document.querySelector('.loading');
+
+// Hide the loading text after 3 seconds
+setTimeout(() => {
+    loadingTextElement.style.display = 'none';
+}, 3000);
+
+

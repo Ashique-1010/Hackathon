@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading Page with Falling Letters Animation</title>
+  <title>Home | Techfest</title>
   <link rel="stylesheet" href="try1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div class="matrix-container">
-    <div class="cursor"></div> <!-- Cursor div -->
+    <div class="loading">
+      <p class="blink-text">
+        <div class="cursor">‹?›</div>
+        Loading...<span id="loading-percentage">0%</span> 
+      </p>
+    </div>
+    
+
+
     <div class="collected-string"></div> <!-- Container for collected letters -->
     <div class="wow">
-        <h2 id="ascii-text">
+        <h4 id="ascii-text">
         
 
   ██░ ██  ▄▄▄       ▄████▄   ██ ▄█▀  ██████  ▄▄▄       █     █░    ██       ▒███████  
@@ -25,7 +37,7 @@
   ░  ░  ░      ░  ░░ ░      ░  ░         ░        ░  ░    ░        ░   ░         ░ ░  
                    ░                                                   ░           
                        
-        </h2>
+        </h4>
     </div>
   </div>
   <script src="try1.js"></script>
