@@ -7,20 +7,22 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
-section {
-  scroll-snap-align: start;
-}
-/* Homepage Styles */
-.homepage {
-  background-color: black;
-  color: white;
+.page {
+  scroll-snap-align: end;
+
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* Homepage Styles */
+#homepage {
+  background-color: black;
+  color: white;
 }
 
 .loading-screen {
@@ -36,31 +38,19 @@ section {
 }
 
 /* Basic Information Styles */
-.basic-info {
+#basic-info {
   background-color: white;
   color: black;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Registration Styles */
-.registration {
+#registration {
   background-color: black;
   color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Sponsors and Links Styles */
-.sponsors {
+#sponsors {
   background-color: white;
   color: black;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
