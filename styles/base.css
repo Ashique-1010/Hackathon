@@ -1,0 +1,56 @@
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.page {
+  scroll-snap-align: end;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Homepage Styles */
+#homepage {
+  background-color: black;
+  color: white;
+}
+
+.loading-screen {
+  /* Loading screen styles */
+}
+
+.loading-animation {
+  /* Loading animation styles */
+}
+
+.content {
+  text-align: center;
+}
+
+/* Basic Information Styles */
+#basic-info {
+  background-color: white;
+  color: black;
+}
+
+/* Registration Styles */
+#registration {
+  background-color: black;
+  color: white;
+}
+
+/* Sponsors and Links Styles */
+#sponsors {
+  background-color: white;
+  color: black;
+}
